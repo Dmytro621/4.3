@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let age = prompt("Ваш рік народження?");
+      let city = prompt("У якому місті ви живете?");
+      let sport = prompt("Твій улюбленний вид спорту?");
+
+      let sportsChampions = {
+        Футбол: "Lionel Messi",
+        Баскетбол: "LeBron James",
+        Тенис: "Novak Djokovic",
+      };
+
+      if (age) {
+        alert(`Вам зараз ${2024 - age} років`);
+      } else if (age === null) {
+        alert(`Шкода, що Ви не захотіли ввести свій вік`);
+      }
+
+      if (city == "Київ") {
+        alert(`Ви живите у столиці ${city}`);
+      } else if (city == "Вашингтон") {
+        alert(`Ви живите у столиці ${city}`);
+      } else if (city == "Лондон") {
+        alert(`Ви живите у столиці ${city}`);
+      } else if (city === null) {
+        alert(`Шкода, що Ви не захотіли ввести своє місто`);
+      } else {
+        alert(`Ви живите у місті ${city}`);
+      }
+
+      if (sportsChampions[sport]) {
+        alert(`Круто! Хочеш стати ${sportsChampions[sport]}?`);
+      } else if (sport === null) {
+        alert(`Шкода, що Ви не захотіли ввести свій улюблений спорт`);
+      }
+    </script>
+  </body>
+</html>
