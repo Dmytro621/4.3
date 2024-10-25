@@ -17,10 +17,12 @@
         Тенис: "Novak Djokovic",
       };
 
+      let message = "";
+
       if (age) {
-        alert(`Вам зараз ${2024 - age} років`);
+        message += `Вам зараз ${2024 - age} років\n`;
       } else if (age === null) {
-        alert(`Шкода, що Ви не захотіли ввести свій вік`);
+        message += `Шкода, що Ви не захотіли ввести свій вік\n`;
       }
 
       //   if (city == "Київ") {
@@ -35,23 +37,45 @@
       //     alert(`Ви живите у місті ${city}`);
       //   }
 
-      switch (city) {
-        case "Київ":
-          alert(`Ви живите у столиці ${city}`);
-          break;
-        case "Вашингтон":
-          alert(`Ви живите у столиці ${city}`);
-          break;
-        case "Лондон":
-          alert(`Ви живите у столиці ${city}`);
-          break;
+      //   switch (city) {
+      //     case "Київ":
+      //       message += `Ви живите у столиці ${city}\n`;
+      //       break;
+      //     case "Вашингтон":
+      //       message += `Ви живите у столиці ${city}\n`;
+      //       break;
+      //     case "Лондон":
+      //       message += `Ви живите у столиці ${city}\n`;
+      //       break;
+      //   }
+
+      if (city) {
+        switch (city) {
+          case "Київ":
+            message += `Ви живите у столиці ${city}\n`;
+            break;
+          case "Вашингтон":
+            message += `Ви живите у столиці ${city}\n`;
+            break;
+          case "Лондон":
+            message += `Ви живите у столиці ${city}\n`;
+            break;
+          default:
+            message += `Ви живете у місті ${city}.\n`;
+        }
+      } else if (city === null) {
+        message += `Шкода, що Ви не захотіли ввести своє місто\n`;
       }
 
       if (sportsChampions[sport]) {
-        alert(`Круто! Хочеш стати ${sportsChampions[sport]}?`);
+        message += `Круто! Хочеш стати ${sportsChampions[sport]}?\n`;
       } else if (sport === null) {
-        alert(`Шкода, що Ви не захотіли ввести свій улюблений спорт`);
+        message += `Шкода, що Ви не захотіли ввести свій улюблений спорт\n`;
+      } else {
+        message += `Твій улюбленний спорт ${sport}`;
       }
+
+      alert(message);
     </script>
   </body>
 </html>
