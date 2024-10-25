@@ -23,16 +23,28 @@
         alert(`Шкода, що Ви не захотіли ввести свій вік`);
       }
 
-      if (city == "Київ") {
-        alert(`Ви живите у столиці ${city}`);
-      } else if (city == "Вашингтон") {
-        alert(`Ви живите у столиці ${city}`);
-      } else if (city == "Лондон") {
-        alert(`Ви живите у столиці ${city}`);
-      } else if (city === null) {
-        alert(`Шкода, що Ви не захотіли ввести своє місто`);
-      } else {
-        alert(`Ви живите у місті ${city}`);
+      //   if (city == "Київ") {
+      //     alert(`Ви живите у столиці ${city}`);
+      //   } else if (city == "Вашингтон") {
+      //     alert(`Ви живите у столиці ${city}`);
+      //   } else if (city == "Лондон") {
+      //     alert(`Ви живите у столиці ${city}`);
+      //   } else if (city === null) {
+      //     alert(`Шкода, що Ви не захотіли ввести своє місто`);
+      //   } else {
+      //     alert(`Ви живите у місті ${city}`);
+      //   }
+
+      switch (city) {
+        case "Київ":
+          alert(`Ви живите у столиці ${city}`);
+          break;
+        case "Вашингтон":
+          alert(`Ви живите у столиці ${city}`);
+          break;
+        case "Лондон":
+          alert(`Ви живите у столиці ${city}`);
+          break;
       }
 
       if (sportsChampions[sport]) {
